@@ -9,25 +9,21 @@ html, body {
   box-sizing: border-box;
   user-select: none;
 }
-
 body {
   display: flex;
 }
-
 .half {
   position: relative;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-
 .blue-side {
   background-color: #2196F3;
 }
 .red-side {
   background-color: #f44336;
 }
-
 .half.blue-side {
   margin-left: calc(-1 * env(safe-area-inset-left));
   width: calc(50% + env(safe-area-inset-left));
@@ -36,7 +32,6 @@ body {
   margin-right: calc(-1 * env(safe-area-inset-right));
   width: calc(50% + env(safe-area-inset-right));
 }
-
 .flip-container {
   position: absolute;
   width: 100%;
@@ -64,7 +59,6 @@ body {
 .back {
   transform: rotateX(180deg);
 }
-
 .score-zone {
   position: relative;
   width: 100%;
@@ -76,7 +70,6 @@ body {
 .decrement-zone {
   height: 30%;
 }
-
 @keyframes flipUp {
   0% { transform: rotateX(0deg); }
   100% { transform: rotateX(-180deg); }
@@ -85,7 +78,6 @@ body {
   0% { transform: rotateX(0deg); }
   100% { transform: rotateX(180deg); }
 }
-
 .reset-button {
   position: fixed;
   top: 20px;
