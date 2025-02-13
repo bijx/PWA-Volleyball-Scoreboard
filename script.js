@@ -56,3 +56,6 @@ function resetScores() {
     origin: { y: 0.6 }
   });
 }
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(reg => {});
+}
