@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Simple Scoreboard</title>
+  
+  <!-- Apple-specific meta tags for PWA support -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Blue side -->
+  <div class="half blue-side" id="blue-side">
+    <div class="flip-container" id="blue-flipper">
+      <div class="flipper">
+        <div class="front" id="blue-front">0</div>
+        <div class="back" id="blue-back">0</div>
+      </div>
+    </div>
+    <div class="score-zone increment-zone"></div>
+    <div class="score-zone decrement-zone"></div>
+  </div>
+  
+  <!-- Red side -->
+  <div class="half red-side" id="red-side">
+    <div class="flip-container" id="red-flipper">
+      <div class="flipper">
+        <div class="front" id="red-front">0</div>
+        <div class="back" id="red-back">0</div>
+      </div>
+    </div>
+    <div class="score-zone increment-zone"></div>
+    <div class="score-zone decrement-zone"></div>
+  </div>
+  
+  <!-- Reset Button -->
+  <button class="reset-button" onclick="resetScores()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M3 12a9 9 0 1 1 18 0 9 9 0 0 1-18 0zm15 0a6 6 0 1 0-12 0 6 6 0 0 0 12 0z"/>
+      <path d="M15 12H9m3-3v6"/>
+    </svg>
+  </button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
