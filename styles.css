@@ -51,7 +51,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 15vw;
+  font-size: min(40vw, 80vh);
+  line-height: 1;
   font-family: Arial, sans-serif;
   color: white;
   backface-visibility: hidden;
