@@ -43,6 +43,7 @@ function updateScore(side, increment) {
     }
   });
 });
+
 function resetScores() {
   blueScore = 0;
   redScore = 0;
